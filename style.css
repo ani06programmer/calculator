@@ -1,0 +1,153 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.blk{
+    color: black;
+}
+
+@font-face{
+    font-family: "Retro";
+    src: url(fonts/A\ Goblin\ Appears!.otf);
+}
+
+main{
+    position: relative;
+    border-radius: 35px;
+    border: 10px solid white;
+    max-width: 355px;
+    width: 100%;
+    margin: 0px 10px;
+}
+
+button{
+    outline: 0;
+    text-align: center;
+    padding: 0px;
+    font-weight: 300;
+    border: 0px;
+    color:white;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 35px;
+    height: 70px;
+    width: 70px;
+}
+
+#zero{
+    border-radius: 40px;
+    width: 155px;
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#result-container{
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 5px solid lightgray;
+    min-height: 130px;
+   
+}
+
+#result{
+    overflow-x: scroll;
+    max-width: 320px;
+    white-space: nowrap;
+    margin-right: 20px;
+    font-weight: 100;
+    font-size: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#result::-webkit-scrollbar {
+    display: none;
+}
+
+#row1,#row2,#row3,#row4,#row5{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.orange{
+    background-color: rgb(244, 158, 63);
+}
+
+.dark-grey{
+    background-color: rgb(51, 51, 51);
+}
+
+.light-grey{
+    background-color: rgb(165, 165, 165);
+}
+
+.button-container{
+    font-family: "Retro";
+    font-size: 10px;
+    position: absolute;
+    left: 5px;
+    top:5px;
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    margin-right: 5px;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 20px;
+    width: 60px;
+    height: 20px;
+    background-color: white;
+}
+
+.circle-switch{
+    background-color: black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+@media screen and (max-width:374px){
+    #result{
+        margin-right: 14px;
+    }
+    main{
+        max-width: 90vw;
+    }
+}
+
+@media screen and (max-width:350px){
+    #result{
+        margin-right: 12px;
+    }
+    button{
+        height: 55px;
+        width: 55px;
+    }
+    #zero{
+        width: 129px;
+    }
+}
