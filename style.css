@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: black;
-    color: white;
+    color:white;
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -60,7 +60,7 @@ button{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    border-bottom: 5px solid lightgray;
+    border-bottom: 5px solid pink;
     min-height: 130px;
    
 }
